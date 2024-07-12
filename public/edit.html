@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear o Editar notas ✍🏼📝</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <a href="home.html"> Regresar </a>
+    <div class="container">
+        <h1 class="text-center">Modifica o Crea una nota!📝</h1>
+        <form id="form-nota">
+            
+                <label>Titulo:</label>
+                <input type="text" id="title" name="title" required maxlength="200">
+            
+            
+                <label>Asunto:</label>
+                <textarea name="asunto" id="asunto" rows="5" required></textarea>
+            
+            
+                <label>Tus Etiquetas:</label>
+                <input type="text" id="etiqueta">
+            
+
+            
+        </form>
+        <div class="d-flex mt-3"></div>
+        <button class="btn-primary" type="submit">Guardar</button>
+        <a href="home.html" class="btn-secondary">Cancelar nota</a>
+        <button class="btn-danger ">Eliminar</button>
+
+            
+    </div>
+
+            
+    
+</body>
+</html>
