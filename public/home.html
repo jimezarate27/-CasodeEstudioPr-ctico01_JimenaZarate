@@ -7,35 +7,90 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="home.css">
 </head>
+<header>
+    <h1 class="text-center"> 🤓📝App de Notas📝🤓</h1>
+</header>
 <body>
     <div class="container">
-        <h1 class="text-center"> Esta es tu App de Notas!📝🤓</h1>
-
-        <div class="grid-container">
+        
+        <div class="grid-container" id="notas-container">
             <div class="item-grid">
                 <h5>Nota 1:</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officiis assumenda temporibus nemo quam eius et, rerum deserunt corporis praesentium ab porro quibusdam. Velit rerum sit id porro, commodi aspernatur?</p>
                 <small>Fecha de Creación: 2-04-2024</small>
+                <button onclick="editarNota(1)">Editar Nota </button>
             </div>
             <div class="item-grid">
                 <h5>Nota 2:</h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id consectetur deleniti quam iste ratione, corporis consequatur nisi est libero ex blanditiis, magni modi dolorum labore repellendus delectus veniam! Quisquam, at.</p>
                 <small>Fecha de Creación: 4-07-2024</small>
+                <button onclick="editarNota(2)">Editar Nota </button>
             </div>
             <div class="item-grid">
                 <h5>Nota 3:</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quia error nemo assumenda ullam, est architecto et adipisci dolor accusantium nihil enim, cumque voluptatem. Nihil in sapiente placeat saepe tempore.</p>
                 <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(3)">Editar Nota </button>
             </div>
+            <div class="item-grid">
+                <h5>Nota 4:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sit deserunt eaque magnam fugiat dicta quaerat nostrum inventore sunt sapiente a esse officia aliquam eligendi necessitatibus perferendis recusandae odio earum.</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(4)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 5:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur quidem amet nostrum doloremque, beatae quo, officia odio iste dolores veritatis alias, sequi accusantium fugiat expedita eaque. Amet, vero error?</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(5)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 6:</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi delectus, distinctio dolorum vero debitis eligendi voluptas tenetur est quasi, velit assumenda error voluptate! Molestiae, accusamus. Unde qui amet dolorem? Incidunt!</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(6)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 7:</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, voluptatibus repellat eius ipsam culpa iste? Sit cupiditate, adipisci, expedita placeat molestias dolores, nesciunt vitae tempora velit minus fugit corporis iusto?</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(7)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 8:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cumque corporis delectus commodi, quam numquam ex mollitia laboriosam optio magni, rem provident officia. Ad culpa quaerat accusantium, ab possimus alias.</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(8)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 9:</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quasi nihil quia unde numquam quos iste iure? Voluptas incidunt assumenda alias earum quidem, cumque non natus consectetur officia odit doloribus!</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(9)">Editar Nota </button>
+            </div>
+            <div class="item-grid">
+                <h5>Nota 10:</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas facere, non sapiente quasi at asperiores harum temporibus aspernatur unde impedit obcaecati nihil, nisi exercitationem dolorum explicabo esse hic minima!</p>
+                <small>Fecha de Creación: 22-01-2024</small>
+                <button onclick="editarNota(10)">Editar Nota </button>
+            </div>
+            <div id="nuevas-notas-container" class="item-grid"></div>
+
         </div>
 
         <a href="edit.html" class="btn btn-primary">Crear una nueva nota</a>
+        
+
+
 
 
 
 
 
     </div>
+    <script src="notas.js"></script>
+
     
 </body>
+<footer>&COPY; App de notas JimenaZarate</footer>
 </html>

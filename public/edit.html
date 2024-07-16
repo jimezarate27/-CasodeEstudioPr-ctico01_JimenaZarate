@@ -7,35 +7,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="edit.css">
 </head>
+<header>
+    <h1 class="text-center">📝Modifica o Crea una nota📝</h1>
+
+</header>
 <body>
-    <a href="home.html"> Regresar </a>
+   <button class="button" > <a href="home.html" style="color: #ffffff;"> Cancelar Nota </a></button>
     <div class="container">
-        <h1 class="text-center">Modifica o Crea una nota!📝</h1>
-        <form id="form-nota">
-            
+       
+        <form  id="form-nota" method="post" action="/notas">
+
                 <label>Titulo:</label>
-                <input type="text" id="title" name="title" required maxlength="200">
+                <input type="text" id="titulo" name="titulo" required maxlength="200">
             
-            
-                <label>Asunto:</label>
+                <label>Contenido:</label>
                 <textarea name="asunto" id="asunto" rows="5" required></textarea>
+           
+                <label for="etiquetas">Tus Etiquetas:</label>
+                <select name="etiquetas" id="etiquetas">
+                <option value="importante" class="importante">Importante</option>
+                <option value="urgente" class="urgente">Urgente</option>
+                <option value="personal" class="personal">Personal</option>
+                <option value="trabajo" class="trabajo">Trabajo</option>
+                <option value="opcional" class="opcional">Opcional</option>
+            </select>
             
-            
-                <label>Tus Etiquetas:</label>
-                <input type="text" id="etiqueta">
-            
+                <label>Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
 
-            
+            <div class="f-flex mt-3">
+                <button  type="submit" class="btn-primary" >Agregar La Nueva Nota</button>
+                </div>
         </form>
-        <div class="d-flex mt-3"></div>
-        <button class="btn-primary" type="submit">Guardar</button>
-        <a href="home.html" class="btn-secondary">Cancelar nota</a>
-        <button class="btn-danger ">Eliminar</button>
-
-            
     </div>
+    <script src="notas.js"></script>
+    
 
             
     
 </body>
+<footer>&COPY; App de notas JimenaZarate</footer>
 </html>

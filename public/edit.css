@@ -1,3 +1,16 @@
+header{
+    background-color: #79B7C4;
+}
+button{
+    background-color: #2F7685;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
 body{
     background-color: #C7EBF2;
 }
@@ -17,3 +30,35 @@ body{
     }
 
     
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.f-flex {
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+}
+.f-flex button[type="submit"] {
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+.importante{
+    background-color: rgb(243, 115, 29);
+    color: rgb(228, 102, 39) ;
+}
+footer{
+    text-align: center;
+    background-color: #79B7C4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
